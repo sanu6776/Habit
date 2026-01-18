@@ -37,6 +37,7 @@ export async function handler(event) {
             value: Number(priceCents) / 100,
             content_name: productName,
           },
+          test_event_code: "TEST34331" //
         },
       ],
     };
