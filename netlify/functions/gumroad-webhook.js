@@ -23,6 +23,7 @@ export async function handler(event) {
     const eventTime = Math.floor(Date.now() / 1000);
 
     const payload = {
+      test_event_code: "TEST34331" //
       data: [
         {
           event_name: "Purchase",
@@ -37,7 +38,6 @@ export async function handler(event) {
             value: Number(priceCents) / 100,
             content_name: productName,
           },
-          test_event_code: "TEST34331" //
         },
       ],
     };
