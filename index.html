@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HabitForge - Complete Habit Tracking System + 29 Bonus Templates | $37 Lifetime Access</title>
-  <meta name="description" content="Build lasting habits with HabitForge. Simple spreadsheet system with automatic analytics + 29 bonus templates. $37 one-time. Used by 10,000+ people. Google Sheets & Excel compatible.">
+  <title>HabitForge - Build Unbreakable Habits in 90 Days | Trusted by 10,000+ Achievers</title>
+  <meta name="description" content="The complete habit tracking system that combines daily accountability, visual analytics, and 29 bonus templates. One-time $37. No subscriptions. Lifetime access.">
   
-  <!-- Open Graph (Social Sharing) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="HabitForge - Complete Habit Tracking System">
-  <meta property="og:description" content="Build lasting habits with proven tracking system + 29 bonus templates. $37 lifetime access.">
+  <meta property="og:description" content="Build lasting habits with proven tracking system + 29 bonus templates">
   <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yourdomain.com">
@@ -19,12 +19,12 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
-  <!-- Gumroad Overlay Script -->
+  <!-- Gumroad Script -->
   <script src="https://gumroad.com/js/gumroad.js"></script>
   
-  <!-- Facebook Pixel Code -->
+  <!-- Facebook Pixel -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -34,7 +34,6 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
     fbq('init', '713158408325221');
     fbq('track', 'PageView');
   </script>
@@ -42,932 +41,1407 @@
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=713158408325221&ev=PageView&noscript=1"/>
   </noscript>
-  <!-- End Facebook Pixel Code -->
   
   <style>
-    /* CSS Variables - Design System */
     :root {
-      /* Brand Colors */
-      --primary: #0F172A;
-      --secondary: #3B82F6;
-      --accent: #10B981;
-      --background: #FFFFFF;
-      --surface: #F8FAFC;
-      --border: #E2E8F0;
-      --text-primary: #0F172A;
-      --text-secondary: #64748B;
-      --text-muted: #94A3B8;
+      /* Premium Color System */
+      --color-slate-50: #f8fafc;
+      --color-slate-100: #f1f5f9;
+      --color-slate-200: #e2e8f0;
+      --color-slate-300: #cbd5e1;
+      --color-slate-400: #94a3b8;
+      --color-slate-500: #64748b;
+      --color-slate-600: #475569;
+      --color-slate-700: #334155;
+      --color-slate-800: #1e293b;
+      --color-slate-900: #0f172a;
       
-      /* Spacing System (8px base) */
-      --spacing-xs: 8px;
-      --spacing-sm: 16px;
-      --spacing-md: 24px;
-      --spacing-lg: 32px;
-      --spacing-xl: 48px;
-      --spacing-2xl: 64px;
-      --spacing-3xl: 96px;
-      --spacing-4xl: 128px;
+      --color-blue-400: #60a5fa;
+      --color-blue-500: #3b82f6;
+      --color-blue-600: #2563eb;
+      --color-blue-700: #1d4ed8;
+      
+      --color-emerald-400: #34d399;
+      --color-emerald-500: #10b981;
+      --color-emerald-600: #059669;
+      
+      --color-violet-500: #8b5cf6;
+      --color-violet-600: #7c3aed;
+      
+      /* Gradients */
+      --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-blue: linear-gradient(135deg, #667eea 0%, #3b82f6 100%);
+      --gradient-emerald: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      --gradient-mesh: radial-gradient(at 40% 20%, hsla(234,65%,70%,0.3) 0px, transparent 50%),
+                       radial-gradient(at 80% 0%, hsla(189,90%,60%,0.3) 0px, transparent 50%),
+                       radial-gradient(at 0% 50%, hsla(355,100%,93%,0.3) 0px, transparent 50%);
+      
+      /* Spacing */
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+      --space-32: 8rem;
       
       /* Typography */
-      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-size-base: 16px;
-      --line-height-base: 1.6;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      
+      /* Shadows */
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+      --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.4);
     }
-
-    /* Reset & Base */
-    *, *::before, *::after {
-      box-sizing: border-box;
+    
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-
-    body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-base);
-      line-height: var(--line-height-base);
-      color: var(--text-primary);
-      background: var(--background);
+    
+    html {
+      scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
+    
+    body {
+      font-family: var(--font-sans);
+      color: var(--color-slate-900);
+      background: white;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    
     img {
       max-width: 100%;
       height: auto;
       display: block;
     }
-
+    
     /* Container */
     .container {
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
-      padding: 0 var(--spacing-lg);
+      padding: 0 var(--space-6);
     }
-
+    
     /* Header */
-    header {
-      padding: var(--spacing-md) 0;
-      border-bottom: 1px solid var(--border);
-      background: var(--background);
+    .header {
       position: sticky;
       top: 0;
-      z-index: 1000;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-slate-200);
+      padding: var(--space-4) 0;
     }
-
+    
     .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
+    
     .logo {
-      font-size: 24px;
-      font-weight: 700;
-      color: var(--primary);
-      letter-spacing: -0.02em;
-    }
-
-    .logo-accent {
-      color: var(--secondary);
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: var(--spacing-3xl) 0;
-      background: linear-gradient(180deg, var(--surface) 0%, var(--background) 100%);
-    }
-
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--spacing-2xl);
-      align-items: center;
-    }
-
-    .hero-text h1 {
-      font-size: 56px;
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin-bottom: var(--spacing-md);
-      color: var(--primary);
-    }
-
-    .hero-text .subheadline {
-      font-size: 20px;
-      line-height: 1.5;
-      color: var(--text-secondary);
-      margin-bottom: var(--spacing-xl);
-    }
-
-    .hero-image img {
-      border-radius: 16px;
-      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-    }
-
-    /* Trust Bar */
-    .trust-bar {
-      display: flex;
-      gap: var(--spacing-xl);
-      align-items: center;
-      margin-top: var(--spacing-xl);
-      padding-top: var(--spacing-xl);
-      border-top: 1px solid var(--border);
-    }
-
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-xs);
-      font-size: 14px;
-      color: var(--text-secondary);
-    }
-
-    .trust-item .icon {
-      color: var(--accent);
-      font-size: 18px;
-    }
-
-    .stars {
-      color: #FFC107;
-      font-size: 18px;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      padding: 18px 40px;
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 26px;
+      font-weight: 800;
+      background: var(--gradient-blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.03em;
       text-decoration: none;
-      border-radius: 8px;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      border: none;
-      text-align: center;
     }
-
-    .btn-primary {
-      background: var(--secondary);
+    
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-3) var(--space-6);
+      background: var(--color-slate-900);
       color: white;
-      box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
     }
-
-    .btn-primary:hover {
-      background: #2563EB;
+    
+    .header-cta:hover {
       transform: translateY(-2px);
-      box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.4);
+      box-shadow: var(--shadow-lg);
     }
-
-    .btn-note {
-      display: block;
-      margin-top: var(--spacing-sm);
+    
+    /* Hero Section - ULTRA PREMIUM */
+    .hero {
+      position: relative;
+      padding: var(--space-32) 0 var(--space-24);
+      overflow: hidden;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--gradient-mesh);
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    
+    .hero-content {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--space-16);
+      align-items: center;
+    }
+    
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 100px;
       font-size: 14px;
-      color: var(--text-muted);
-      text-align: center;
+      font-weight: 600;
+      color: var(--color-blue-600);
+      margin-bottom: var(--space-6);
+      animation: slideDown 0.6s ease-out;
     }
-
+    
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--color-slate-900);
+      margin-bottom: var(--space-6);
+      animation: slideUp 0.8s ease-out;
+    }
+    
+    .gradient-text {
+      background: var(--gradient-blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hero-subtitle {
+      font-size: 21px;
+      line-height: 1.6;
+      color: var(--color-slate-600);
+      margin-bottom: var(--space-8);
+      max-width: 600px;
+      animation: slideUp 0.8s ease-out 0.2s both;
+    }
+    
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      animation: slideUp 0.8s ease-out 0.4s both;
+    }
+    
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      padding: var(--space-5) var(--space-10);
+      background: var(--gradient-blue);
+      color: white;
+      border-radius: 16px;
+      font-size: 19px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 10px 40px -10px rgba(59, 130, 246, 0.5);
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.5s;
+    }
+    
+    .cta-button:hover::before {
+      left: 100%;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 60px -10px rgba(59, 130, 246, 0.6);
+    }
+    
+    .trust-badges {
+      display: flex;
+      align-items: center;
+      gap: var(--space-6);
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--color-slate-600);
+    }
+    
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    
+    .trust-badge::before {
+      content: '✓';
+      color: var(--color-emerald-500);
+      font-weight: 700;
+      font-size: 16px;
+    }
+    
+    .stars {
+      color: #fbbf24;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+    
+    .hero-image-wrapper {
+      position: relative;
+      animation: fadeIn 1s ease-out 0.6s both;
+    }
+    
+    .hero-image {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-2xl);
+      border: 1px solid var(--color-slate-200);
+      transform: perspective(1000px) rotateY(-5deg);
+      transition: transform 0.6s ease;
+    }
+    
+    .hero-image:hover {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    
+    .floating-badge {
+      position: absolute;
+      background: white;
+      padding: var(--space-4) var(--space-5);
+      border-radius: 16px;
+      box-shadow: var(--shadow-xl);
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .floating-badge-1 {
+      top: 10%;
+      right: -10%;
+    }
+    
+    .floating-badge-2 {
+      bottom: 15%;
+      left: -8%;
+      animation-delay: 1.5s;
+    }
+    
+    .floating-badge-number {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--color-blue-600);
+      display: block;
+    }
+    
+    .floating-badge-text {
+      font-size: 13px;
+      color: var(--color-slate-600);
+      font-weight: 600;
+    }
+    
     /* Social Proof Bar */
     .social-proof-bar {
-      padding: var(--spacing-xl) 0;
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      background: var(--color-slate-50);
+      border-top: 1px solid var(--color-slate-200);
+      border-bottom: 1px solid var(--color-slate-200);
+      padding: var(--space-12) 0;
     }
-
-    .social-proof-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: var(--spacing-2xl);
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-8);
       text-align: center;
     }
-
-    .social-stat {
-      font-size: 14px;
-      color: var(--text-secondary);
+    
+    .stat {
+      padding: var(--space-6);
+      background: white;
+      border-radius: 20px;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease;
     }
-
-    .social-stat strong {
-      color: var(--primary);
-      font-weight: 600;
+    
+    .stat:hover {
+      transform: translateY(-5px);
     }
-
-    /* Section Styles */
-    section {
-      padding: var(--spacing-3xl) 0;
+    
+    .stat-number {
+      font-size: 48px;
+      font-weight: 900;
+      background: var(--gradient-blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+      margin-bottom: var(--space-2);
     }
-
+    
+    .stat-label {
+      font-size: 15px;
+      color: var(--color-slate-600);
+      font-weight: 500;
+    }
+    
+    /* Section */
+    .section {
+      padding: var(--space-24) 0;
+      position: relative;
+    }
+    
     .section-header {
       text-align: center;
-      margin-bottom: var(--spacing-2xl);
+      max-width: 800px;
+      margin: 0 auto var(--space-16);
     }
-
-    .section-header h2 {
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      margin-bottom: var(--spacing-md);
-      color: var(--primary);
+    
+    .section-badge {
+      display: inline-block;
+      padding: var(--space-2) var(--space-4);
+      background: rgba(139, 92, 246, 0.1);
+      color: var(--color-violet-600);
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: var(--space-4);
     }
-
-    .section-header p {
+    
+    .section-title {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--color-slate-900);
+      margin-bottom: var(--space-5);
+    }
+    
+    .section-subtitle {
       font-size: 20px;
-      color: var(--text-secondary);
-      max-width: 700px;
-      margin: 0 auto;
+      line-height: 1.7;
+      color: var(--color-slate-600);
     }
-
-    /* Problem Section */
+    
+    /* Problem Cards - PREMIUM */
     .problem-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: var(--spacing-lg);
-      margin-top: var(--spacing-2xl);
+      gap: var(--space-8);
+      margin-top: var(--space-12);
     }
-
+    
     .problem-card {
-      background: var(--background);
-      padding: var(--spacing-xl);
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      background: white;
+      padding: var(--space-10);
+      border-radius: 24px;
+      border: 1px solid var(--color-slate-200);
+      box-shadow: var(--shadow-lg);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
     }
-
-    .problem-card .icon {
-      font-size: 48px;
-      margin-bottom: var(--spacing-md);
+    
+    .problem-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-blue);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
     }
-
+    
+    .problem-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .problem-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-2xl);
+      border-color: var(--color-blue-200);
+    }
+    
+    .problem-icon {
+      font-size: 56px;
+      margin-bottom: var(--space-6);
+      display: block;
+    }
+    
     .problem-card h3 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: var(--spacing-sm);
-      color: var(--primary);
-    }
-
-    .problem-card p {
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    .transition-text {
-      text-align: center;
       font-size: 24px;
-      font-weight: 600;
-      color: var(--secondary);
-      margin-top: var(--spacing-2xl);
-      padding: var(--spacing-xl);
+      font-weight: 700;
+      color: var(--color-slate-900);
+      margin-bottom: var(--space-4);
     }
-
-    /* Features Section */
-    .features-list {
+    
+    .problem-card p {
+      color: var(--color-slate-600);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    
+    /* Transition CTA */
+    .transition-cta {
+      text-align: center;
+      margin: var(--space-20) 0;
+      padding: var(--space-12);
+      background: linear-gradient(135deg, var(--color-slate-900) 0%, var(--color-slate-800) 100%);
+      border-radius: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .transition-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 70%);
+      animation: rotate 20s linear infinite;
+    }
+    
+    .transition-cta h2 {
+      font-size: 40px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: var(--space-6);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .transition-cta .gradient-text {
+      background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    /* Feature Section - REDESIGNED */
+    .feature-grid {
       display: grid;
-      gap: var(--spacing-3xl);
-      margin-top: var(--spacing-2xl);
+      gap: var(--space-20);
     }
-
+    
     .feature {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: var(--spacing-2xl);
+      gap: var(--space-16);
       align-items: center;
     }
-
-    .feature:nth-child(even) .feature-image {
-      order: 2;
+    
+    .feature:nth-child(even) {
+      direction: rtl;
     }
-
-    .feature:nth-child(even) .feature-text {
-      order: 1;
+    
+    .feature:nth-child(even) > * {
+      direction: ltr;
     }
-
-    .feature-text h3 {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: var(--spacing-md);
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      gap: var(--spacing-sm);
+    
+    .feature-content h3 {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--color-slate-900);
+      margin-bottom: var(--space-5);
+      line-height: 1.2;
     }
-
-    .feature-text h3 .icon {
-      color: var(--secondary);
+    
+    .feature-icon {
+      display: inline-block;
+      font-size: 40px;
+      margin-right: var(--space-3);
     }
-
-    .feature-text p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: var(--text-secondary);
+    
+    .feature-content p {
+      font-size: 19px;
+      line-height: 1.7;
+      color: var(--color-slate-600);
+      margin-bottom: var(--space-6);
     }
-
-    .feature-image img {
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-
-    /* How It Works */
-    .how-it-works {
-      background: var(--surface);
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--spacing-xl);
-      margin-top: var(--spacing-2xl);
-    }
-
-    .step {
-      text-align: center;
-      padding: var(--spacing-xl);
-    }
-
-    .step-number {
-      font-size: 72px;
-      font-weight: 700;
-      color: var(--secondary);
-      opacity: 0.2;
-      line-height: 1;
-      margin-bottom: var(--spacing-md);
-    }
-
-    .step h3 {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: var(--spacing-sm);
-      color: var(--primary);
-    }
-
-    .step p {
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    /* Value Stack */
-    .value-stack {
-      background: var(--background);
-    }
-
-    .value-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--spacing-2xl);
-      margin-top: var(--spacing-2xl);
-    }
-
-    .value-list {
-      background: var(--surface);
-      padding: var(--spacing-xl);
-      border-radius: 12px;
-      border: 1px solid var(--border);
-    }
-
-    .value-list h3 {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: var(--spacing-md);
-      color: var(--primary);
-    }
-
-    .value-list ul {
+    
+    .feature-list {
       list-style: none;
+      margin-top: var(--space-6);
     }
-
-    .value-list li {
-      padding: var(--spacing-sm) 0;
-      color: var(--text-secondary);
+    
+    .feature-list li {
       display: flex;
       align-items: flex-start;
-      gap: var(--spacing-sm);
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+      font-size: 17px;
+      color: var(--color-slate-700);
     }
-
-    .value-list li::before {
-      content: "✓";
-      color: var(--accent);
+    
+    .feature-list li::before {
+      content: '→';
+      color: var(--color-blue-500);
       font-weight: 700;
+      font-size: 20px;
       flex-shrink: 0;
     }
-
-    .value-breakdown {
-      background: linear-gradient(135deg, var(--secondary) 0%, #2563EB 100%);
-      padding: var(--spacing-xl);
-      border-radius: 12px;
+    
+    .feature-image-wrapper {
+      position: relative;
+    }
+    
+    .feature-image {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-2xl);
+      border: 1px solid var(--color-slate-200);
+      transition: transform 0.4s ease;
+    }
+    
+    .feature-image:hover {
+      transform: scale(1.02);
+    }
+    
+    /* How It Works */
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-10);
+      margin-top: var(--space-16);
+      position: relative;
+    }
+    
+    .steps-container::before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 20%;
+      right: 20%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-blue-500), var(--color-emerald-500));
+      z-index: 0;
+    }
+    
+    .step {
+      background: white;
+      padding: var(--space-8);
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      border: 1px solid var(--color-slate-200);
+      transition: all 0.3s ease;
+    }
+    
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .step-number {
+      width: 80px;
+      height: 80px;
+      background: var(--gradient-blue);
       color: white;
-    }
-
-    .value-breakdown h3 {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: var(--spacing-md);
-    }
-
-    .value-item {
+      border-radius: 50%;
       display: flex;
-      justify-content: space-between;
-      padding: var(--spacing-sm) 0;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 800;
+      margin: 0 auto var(--space-6);
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
     }
-
-    .value-item:last-child {
-      border-bottom: none;
-    }
-
-    .value-total {
-      margin-top: var(--spacing-md);
-      padding-top: var(--spacing-md);
-      border-top: 2px solid rgba(255,255,255,0.3);
-    }
-
-    .value-total .big-price {
-      font-size: 48px;
+    
+    .step h3 {
+      font-size: 24px;
       font-weight: 700;
-      margin: var(--spacing-sm) 0;
+      color: var(--color-slate-900);
+      margin-bottom: var(--space-3);
     }
-
-    .value-total .small {
-      font-size: 14px;
+    
+    .step p {
+      color: var(--color-slate-600);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    /* Value Stack - ULTRA PREMIUM */
+    .value-stack-wrapper {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 32px;
+      padding: var(--space-16);
+      margin-top: var(--space-16);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .value-stack-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    }
+    
+    .value-stack-header {
+      text-align: center;
+      color: white;
+      margin-bottom: var(--space-12);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .value-stack-header h2 {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: var(--space-4);
+    }
+    
+    .value-stack-header p {
+      font-size: 20px;
       opacity: 0.9;
     }
-
-    .savings {
-      background: rgba(16, 185, 129, 0.2);
-      padding: var(--spacing-md);
-      border-radius: 8px;
-      margin-top: var(--spacing-md);
-      text-align: center;
-      font-weight: 600;
+    
+    .value-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: var(--space-12);
+      position: relative;
+      z-index: 1;
     }
-
-    /* Comparison Table */
-    .comparison {
-      background: var(--surface);
+    
+    .value-column {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: var(--space-10);
+      border-radius: 24px;
+      box-shadow: var(--shadow-2xl);
     }
-
-    .comparison-table {
-      margin-top: var(--spacing-2xl);
-      background: var(--background);
+    
+    .value-column h3 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--color-slate-900);
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-4);
+      border-bottom: 3px solid var(--color-blue-500);
+    }
+    
+    .value-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+      font-size: 16px;
+      color: var(--color-slate-700);
+    }
+    
+    .check-icon {
+      color: var(--color-emerald-500);
+      font-weight: 700;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    
+    .bonus-category {
+      margin-bottom: var(--space-6);
+    }
+    
+    .bonus-category strong {
+      color: var(--color-slate-900);
+      display: block;
+      margin-bottom: var(--space-3);
+      font-size: 17px;
+    }
+    
+    .pricing-box {
+      background: white;
+      padding: var(--space-8);
+      border-radius: 20px;
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .pricing-row {
+      display: flex;
+      justify-content: space-between;
+      padding: var(--space-4) 0;
+      font-size: 16px;
+      color: var(--color-slate-600);
+      border-bottom: 1px solid var(--color-slate-200);
+    }
+    
+    .pricing-row:last-child {
+      border-bottom: none;
+    }
+    
+    .pricing-row.total {
+      font-weight: 700;
+      color: var(--color-slate-900);
+      font-size: 18px;
+      padding-top: var(--space-6);
+      margin-top: var(--space-4);
+      border-top: 2px solid var(--color-slate-300);
+      border-bottom: none;
+    }
+    
+    .pricing-row.final {
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--color-blue-600);
+      padding-top: var(--space-4);
+    }
+    
+    .pricing-row.savings {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--color-emerald-600);
+      background: rgba(16, 185, 129, 0.1);
+      padding: var(--space-4);
       border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      margin-top: var(--space-4);
     }
-
-    .comparison-table table {
+    
+    /* Comparison Table */
+    .comparison-wrapper {
+      margin-top: var(--space-16);
+      overflow-x: auto;
+      border-radius: 24px;
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .comparison-table {
       width: 100%;
-      border-collapse: collapse;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
     }
-
+    
     .comparison-table th,
     .comparison-table td {
-      padding: var(--spacing-md);
+      padding: var(--space-5);
       text-align: left;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--color-slate-200);
     }
-
-    .comparison-table th {
-      background: var(--surface);
-      font-weight: 600;
-      color: var(--primary);
+    
+    .comparison-table thead th {
+      background: var(--color-slate-900);
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
-
-    .comparison-table td {
-      color: var(--text-secondary);
+    
+    .comparison-table tbody tr:hover {
+      background: var(--color-slate-50);
     }
-
+    
     .comparison-table .highlight {
-      background: rgba(59, 130, 246, 0.05);
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    .check {
-      color: var(--accent);
+      background: linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(16,185,129,0.1) 100%);
       font-weight: 700;
+      position: relative;
     }
-
-    .cross {
-      color: #EF4444;
+    
+    .comparison-table .highlight::before {
+      content: '⭐';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+    }
+    
+    .comparison-table .check {
+      color: var(--color-emerald-600);
       font-weight: 700;
+      font-size: 20px;
     }
-
-    /* Testimonials */
-    .testimonials {
-      background: var(--background);
+    
+    .comparison-table .cross {
+      color: #ef4444;
+      font-weight: 700;
+      font-size: 20px;
     }
-
+    
+    .comparison-table .warning {
+      color: #f59e0b;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    
+    /* Testimonials - ULTRA PREMIUM */
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: var(--spacing-lg);
-      margin-top: var(--spacing-2xl);
+      gap: var(--space-8);
+      margin-top: var(--space-16);
     }
-
+    
     .testimonial {
-      background: var(--surface);
-      padding: var(--spacing-xl);
-      border-radius: 12px;
-      border: 1px solid var(--border);
+      background: white;
+      padding: var(--space-8);
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--color-slate-200);
+      transition: all 0.4s ease;
+      position: relative;
     }
-
+    
+    .testimonial::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      font-size: 100px;
+      color: var(--color-blue-500);
+      opacity: 0.1;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    
+    .testimonial:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-2xl);
+      border-color: var(--color-blue-300);
+    }
+    
     .testimonial-header {
       display: flex;
-      gap: var(--spacing-md);
-      margin-bottom: var(--spacing-md);
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-5);
     }
-
-    .testimonial-image {
-      width: 64px;
-      height: 64px;
+    
+    .testimonial-avatar {
+      width: 72px;
+      height: 72px;
       border-radius: 50%;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-
-    .testimonial-image img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
+      border: 3px solid var(--color-blue-500);
+      box-shadow: var(--shadow-md);
     }
-
-    .testimonial-info {
-      flex: 1;
-    }
-
+    
     .testimonial-info h4 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--primary);
-      margin-bottom: 4px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-slate-900);
+      margin-bottom: var(--space-1);
     }
-
+    
     .testimonial-info p {
       font-size: 14px;
-      color: var(--text-muted);
+      color: var(--color-slate-500);
+      font-weight: 500;
     }
-
-    .testimonial-rating {
-      color: #FFC107;
-      font-size: 16px;
-      margin-bottom: var(--spacing-sm);
-    }
-
+    
     .testimonial-text {
-      color: var(--text-secondary);
-      line-height: 1.6;
-      font-style: italic;
+      color: var(--color-slate-700);
+      line-height: 1.7;
+      margin-bottom: var(--space-5);
+      font-size: 16px;
+      position: relative;
+      z-index: 1;
     }
-
+    
+    .testimonial-rating {
+      color: #fbbf24;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    
     /* FAQ */
-    .faq {
-      background: var(--surface);
-    }
-
     .faq-list {
-      max-width: 800px;
-      margin: var(--spacing-2xl) auto 0;
+      max-width: 900px;
+      margin: var(--space-16) auto 0;
     }
-
+    
     .faq-item {
-      background: var(--background);
-      margin-bottom: var(--spacing-md);
-      border-radius: 8px;
+      background: white;
+      border-radius: 20px;
+      margin-bottom: var(--space-5);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-slate-200);
       overflow: hidden;
-      border: 1px solid var(--border);
+      transition: all 0.3s ease;
     }
-
+    
+    .faq-item:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .faq-item.active {
+      border-color: var(--color-blue-500);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+    
     .faq-question {
-      padding: var(--spacing-md) var(--spacing-lg);
-      font-weight: 600;
-      color: var(--primary);
+      width: 100%;
+      padding: var(--space-6) var(--space-8);
+      background: none;
+      border: none;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--color-slate-900);
+      text-align: left;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: background 0.2s;
+      font-family: var(--font-sans);
+      transition: background 0.2s ease;
     }
-
+    
     .faq-question:hover {
-      background: var(--surface);
+      background: var(--color-slate-50);
     }
-
-    .faq-question::after {
-      content: "+";
-      font-size: 24px;
+    
+    .faq-icon {
+      font-size: 28px;
+      color: var(--color-blue-500);
       font-weight: 300;
-      color: var(--secondary);
-      transition: transform 0.2s;
-    }
-
-    .faq-question.active::after {
-      transform: rotate(45deg);
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 0 var(--spacing-lg) var(--spacing-md);
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-
-    .faq-answer.active {
-      display: block;
-    }
-
-    /* Final CTA */
-    .final-cta {
-      background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
-      color: white;
-      text-align: center;
-    }
-
-    .final-cta h2 {
-      font-size: 48px;
-      font-weight: 700;
-      margin-bottom: var(--spacing-md);
-      color: white;
-    }
-
-    .final-cta p {
-      font-size: 20px;
-      margin-bottom: var(--spacing-xl);
-      opacity: 0.9;
-    }
-
-    .cta-box {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-      padding: var(--spacing-xl);
-      border-radius: 12px;
-      max-width: 600px;
-      margin: 0 auto;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-
-    .cta-features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--spacing-md);
-      margin: var(--spacing-xl) 0;
-      text-align: left;
-    }
-
-    .cta-feature {
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
       display: flex;
       align-items: center;
-      gap: var(--spacing-sm);
-      font-size: 14px;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(59, 130, 246, 0.1);
     }
-
-    .cta-feature::before {
-      content: "✓";
-      color: var(--accent);
+    
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background: var(--color-blue-500);
+      color: white;
+    }
+    
+    .faq-answer {
+      padding: 0 var(--space-8) var(--space-6);
+      color: var(--color-slate-600);
+      line-height: 1.7;
+      font-size: 17px;
+      display: none;
+    }
+    
+    .faq-item.active .faq-answer {
+      display: block;
+      animation: slideDown 0.3s ease-out;
+    }
+    
+    /* Final CTA - PREMIUM */
+    .final-cta {
+      background: linear-gradient(135deg, var(--color-slate-900) 0%, #1e293b 100%);
+      padding: var(--space-24) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--gradient-mesh);
+      opacity: 0.3;
+    }
+    
+    .final-cta-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: white;
+    }
+    
+    .final-cta h2 {
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: var(--space-6);
+      line-height: 1.2;
+    }
+    
+    .final-cta .section-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 22px;
+      margin-bottom: var(--space-12);
+    }
+    
+    .cta-box {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: var(--space-10);
+      border-radius: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .cta-button-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      padding: var(--space-6) var(--space-12);
+      background: white;
+      color: var(--color-slate-900);
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .cta-button-white:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+      background: var(--color-slate-50);
+    }
+    
+    .trust-badges-final {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-8);
+      margin-top: var(--space-8);
+      flex-wrap: wrap;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 15px;
+    }
+    
+    .trust-badge-final {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    
+    .trust-badge-final::before {
+      content: '✓';
+      color: var(--color-emerald-400);
       font-weight: 700;
     }
-
-    .security-badges {
-      margin-top: var(--spacing-xl);
-      padding-top: var(--spacing-xl);
-      border-top: 1px solid rgba(255,255,255,0.2);
-    }
-
-    .security-badges p {
+    
+    .security-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+      padding-top: var(--space-6);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.7);
       font-size: 14px;
-      opacity: 0.7;
-      margin-bottom: var(--spacing-sm);
     }
-
+    
     .ps-section {
-      max-width: 600px;
-      margin: var(--spacing-xl) auto 0;
-      padding-top: var(--spacing-xl);
-      border-top: 1px solid rgba(255,255,255,0.2);
-      font-size: 14px;
-      opacity: 0.9;
+      max-width: 800px;
+      margin: var(--space-16) auto 0;
+      padding-top: var(--space-12);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
       text-align: left;
     }
-
+    
     .ps-section p {
-      margin-bottom: var(--spacing-sm);
-      font-size: 14px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: var(--space-5);
+      line-height: 1.7;
+      font-size: 17px;
     }
-
-    /* Footer */
-    footer {
-      background: var(--primary);
+    
+    .ps-section strong {
       color: white;
-      padding: var(--spacing-2xl) 0 var(--spacing-md);
+      font-weight: 700;
     }
-
-    .footer-content {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: var(--spacing-2xl);
-      margin-bottom: var(--spacing-xl);
+    
+    /* Footer */
+    .footer {
+      background: var(--color-slate-900);
+      color: rgba(255, 255, 255, 0.6);
+      padding: var(--space-16) 0 var(--space-8);
     }
-
+    
     .footer-links {
       display: flex;
-      gap: var(--spacing-xl);
+      justify-content: center;
+      gap: var(--space-8);
+      margin-bottom: var(--space-10);
+      flex-wrap: wrap;
     }
-
+    
     .footer-links a {
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
-      font-size: 14px;
+      font-size: 15px;
+      font-weight: 500;
       transition: color 0.2s;
     }
-
+    
     .footer-links a:hover {
       color: white;
     }
-
-    .footer-contact p {
+    
+    .footer-copyright {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: var(--space-10);
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .footer-disclaimers {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: var(--space-8);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .disclaimer {
+      margin-bottom: var(--space-6);
+      font-size: 13px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .disclaimer strong {
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      margin-bottom: var(--space-2);
       font-size: 14px;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: var(--spacing-xs);
     }
-
-    .footer-contact a {
-      color: var(--secondary);
-      text-decoration: none;
-    }
-
-    .footer-bottom {
-      padding-top: var(--spacing-xl);
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .copyright {
-      font-size: 14px;
-      color: rgba(255,255,255,0.5);
-      margin-bottom: var(--spacing-md);
-    }
-
-    .disclaimers {
-      font-size: 12px;
-      color: rgba(255,255,255,0.4);
-      line-height: 1.8;
-    }
-
-    .disclaimers p {
-      margin-bottom: var(--spacing-sm);
-    }
-
+    
     /* Animations */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.6s ease forwards;
-    }
-
-    @keyframes fadeInUp {
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-
-    /* Mobile Responsive */
+    
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .fade-in-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fade-in-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero h1 {
+        font-size: 52px;
+      }
+      
+      .section-title {
+        font-size: 42px;
+      }
+      
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
     @media (max-width: 768px) {
       .container {
-        padding: 0 var(--spacing-md);
+        padding: 0 var(--space-4);
       }
-
+      
       .hero {
-        padding: var(--spacing-2xl) 0;
+        padding: var(--space-16) 0 var(--space-12);
       }
-
+      
       .hero-content {
         grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
+        gap: var(--space-10);
       }
-
-      .hero-text h1 {
+      
+      .hero h1 {
+        font-size: 40px;
+      }
+      
+      .hero-subtitle {
+        font-size: 18px;
+      }
+      
+      .cta-button {
+        font-size: 17px;
+        padding: var(--space-5) var(--space-8);
+        width: 100%;
+      }
+      
+      .floating-badge {
+        display: none;
+      }
+      
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+      }
+      
+      .section-title {
         font-size: 36px;
       }
-
-      .hero-text .subheadline {
-        font-size: 18px;
+      
+      .section-subtitle {
+        font-size: 17px;
       }
-
-      .hero-image {
-        order: -1;
-      }
-
-      .trust-bar {
-        flex-direction: column;
-        gap: var(--spacing-md);
-        align-items: flex-start;
-      }
-
-      .social-proof-content {
-        flex-direction: column;
-        gap: var(--spacing-md);
-      }
-
-      .section-header h2 {
-        font-size: 32px;
-      }
-
-      .section-header p {
-        font-size: 18px;
-      }
-
+      
       .problem-grid {
         grid-template-columns: 1fr;
       }
-
-      .features-list {
-        gap: var(--spacing-2xl);
+      
+      .steps-container {
+        grid-template-columns: 1fr;
       }
-
+      
+      .steps-container::before {
+        display: none;
+      }
+      
       .feature {
         grid-template-columns: 1fr;
       }
-
-      .feature:nth-child(even) .feature-image,
-      .feature:nth-child(even) .feature-text {
-        order: initial;
+      
+      .feature:nth-child(even) {
+        direction: ltr;
       }
-
-      .feature-text h3 {
-        font-size: 24px;
+      
+      .feature-content h3 {
+        font-size: 28px;
       }
-
-      .feature-text p {
-        font-size: 16px;
-      }
-
-      .steps {
+      
+      .value-grid {
         grid-template-columns: 1fr;
       }
-
-      .value-content {
-        grid-template-columns: 1fr;
-      }
-
-      .comparison-table {
-        overflow-x: auto;
-      }
-
+      
       .testimonials-grid {
         grid-template-columns: 1fr;
       }
-
+      
+      .comparison-table {
+        font-size: 14px;
+      }
+      
+      .comparison-table th,
+      .comparison-table td {
+        padding: var(--space-3);
+      }
+      
       .final-cta h2 {
-        font-size: 32px;
-      }
-
-      .final-cta p {
-        font-size: 18px;
-      }
-
-      .cta-features {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-content {
-        grid-template-columns: 1fr;
-      }
-
-      .btn {
-        width: 100%;
-        padding: 16px 32px;
-      }
-
-      section {
-        padding: var(--spacing-2xl) 0;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-text h1 {
-        font-size: 28px;
-      }
-
-      .section-header h2 {
-        font-size: 28px;
-      }
-
-      .step-number {
-        font-size: 48px;
-      }
-
-      .value-breakdown .big-price {
         font-size: 36px;
+      }
+      
+      .cta-button-white {
+        font-size: 18px;
+        padding: var(--space-5) var(--space-8);
+      }
+      
+      .header-cta {
+        font-size: 14px;
+        padding: var(--space-2) var(--space-4);
       }
     }
   </style>
 </head>
 <body>
   <!-- Header -->
-  <header>
+  <header class="header">
     <div class="container">
       <div class="header-content">
-        <div class="logo">HABIT<span class="logo-accent">FORGE</span></div>
+        <a href="/" class="logo">HABITFORGE</a>
+        <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="header-cta gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
+          Get Started →
+        </a>
       </div>
     </div>
   </header>
@@ -977,309 +1451,466 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Build Lasting Habits in 90 Days with the System Trusted by 10,000+ High Achievers</h1>
-          <p class="subheadline">The only habit tracker that combines daily accountability, visual progress tracking, goal setting, AND 29 bonus productivity templates in one powerful spreadsheet system.</p>
+          <div class="hero-badge">
+            <span>✨</span>
+            <span>Trusted by 10,000+ High Achievers</span>
+          </div>
           
-          <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="btn btn-primary gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">Get Instant Access - $37</a>
-          <p class="btn-note">7-day conditional refund • Works on any device • Lifetime access</p>
-
-          <div class="trust-bar">
-            <div class="trust-item">
-              <span class="icon">✓</span>
-              <span>30 templates included</span>
+          <h1>
+            Stop Breaking Streaks.<br>
+            Start Building <span class="gradient-text">Unbreakable Habits.</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            The complete habit tracking system that turns daily consistency into automatic success. No apps. No subscriptions. Just simple tracking that actually works.
+          </p>
+          
+          <div class="hero-cta-group">
+            <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
+              Get Instant Access - $37
+              <span>→</span>
+            </a>
+            
+            <div class="trust-badges">
+              <div class="trust-badge">
+                <span class="stars">★★★★★</span>
+                <span>4.8/5 from 2,341 reviews</span>
+              </div>
+              <div class="trust-badge">7-day conditional refund</div>
+              <div class="trust-badge">Lifetime access</div>
             </div>
           </div>
         </div>
-
-        <div class="hero-image">
-          <img src="./images/hero-dashboard.png" alt="HabitForge dashboard showing 30-day habit tracking with color-coded progress charts and automatic analytics" loading="eager" width="1200" height="800">
+        
+        <div class="hero-image-wrapper">
+          <div class="hero-image">
+            <img src="./images/hero-dashboard.webp" alt="HabitForge dashboard showing daily habit tracking with automatic progress charts and color-coded analytics" loading="eager" width="1200" height="800">
+          </div>
+          
+          <div class="floating-badge floating-badge-1">
+            <span class="floating-badge-number">90%</span>
+            <span class="floating-badge-text">Success Rate</span>
+          </div>
+          
+          <div class="floating-badge floating-badge-2">
+            <span class="floating-badge-number">30 sec</span>
+            <span class="floating-badge-text">Daily Input</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Social Proof Bar -->
-  <div class="social-proof-bar">
+  <section class="social-proof-bar">
     <div class="container">
-      <div class="social-proof-content">
-        <div class="social-stat"><strong>★★★★★ 4.8/5</strong> from 2,341 reviews</div>
-        <div class="social-stat"><strong>10,000+</strong> people building better habits</div>
-        <div class="social-stat"><strong>30 templates</strong> ready to use</div>
-        <div class="social-stat">🔒 Secure checkout via <strong>Gumroad</strong></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Problem Section -->
-  <section class="problem">
-    <div class="container">
-      <div class="section-header">
-        <h2>Why Most Habit Trackers Fail (And What Actually Works)</h2>
-      </div>
-
-      <div class="problem-grid">
-        <div class="problem-card fade-in">
-          <div class="icon">📱</div>
-          <h3>Habit Apps Are Annoying</h3>
-          <p>Endless notifications. UI changes every month. $10 per month forever. You don't need more noise in your life.</p>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">10,000+</span>
+          <span class="stat-label">Active Users</span>
         </div>
-
-        <div class="problem-card fade-in">
-          <div class="icon">📓</div>
-          <h3>Journals Take Too Long</h3>
-          <p>15 minutes of writing every morning? You don't have time for essays. You need simple tracking, not journaling therapy.</p>
+        <div class="stat">
+          <span class="stat-number">4.8/5</span>
+          <span class="stat-label">Average Rating</span>
         </div>
-
-        <div class="problem-card fade-in">
-          <div class="icon">📊</div>
-          <h3>DIY Spreadsheets Break</h3>
-          <p>Formulas that stop working. Hours of setup. One wrong click ruins everything. You need a system that just works.</p>
+        <div class="stat">
+          <span class="stat-number">30</span>
+          <span class="stat-label">Templates Included</span>
         </div>
-      </div>
-
-      <div class="transition-text">
-        What if there was a better way? A system that's simple, yours to control, and actually works?
+        <div class="stat">
+          <span class="stat-number">$335</span>
+          <span class="stat-label">You Save Today</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Solution Section -->
-  <section class="solution">
+  <!-- Problem Section -->
+  <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Introducing HabitForge</h2>
-        <p>The Complete Habit & Productivity System</p>
+        <span class="section-badge">The Problem</span>
+        <h2 class="section-title">You've Tried Everything. Nothing Sticks.</h2>
+        <p class="section-subtitle">
+          Another Monday. Another "fresh start." Another broken streak by Wednesday. Sound familiar?
+        </p>
       </div>
+      
+      <div class="problem-grid">
+        <div class="problem-card fade-in-scroll">
+          <span class="problem-icon">📱</span>
+          <h3>Habit Apps Feel Like Work</h3>
+          <p>Too many features. Endless notifications. UI changes break your flow. $120/year for software you'll abandon in 3 months. You need simplicity, not complexity.</p>
+        </div>
+        
+        <div class="problem-card fade-in-scroll">
+          <span class="problem-icon">📓</span>
+          <h3>Journals Demand Too Much Time</h3>
+          <p>Who has 20 minutes every morning for reflective writing? You need quick tracking, not therapy sessions. Checking a box should take seconds, not paragraphs.</p>
+        </div>
+        
+        <div class="problem-card fade-in-scroll">
+          <span class="problem-icon">💔</span>
+          <h3>DIY Spreadsheets Always Break</h3>
+          <p>Hours building formulas. One accidental delete ruins everything. No visual feedback. No motivation. Just endless manual work that kills consistency before it starts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="features-list">
-        <div class="feature fade-in">
-          <div class="feature-text">
-            <h3><span class="icon">⚡</span> Set Up in 5 Minutes</h3>
-            <p>No complex configuration. Add your habits and start tracking immediately. Works in Google Sheets and Excel. Download, open, and you're ready to build consistency.</p>
+  <!-- Transition CTA -->
+  <section class="transition-cta fade-in-scroll">
+    <div class="container">
+      <h2>
+        What if consistency wasn't about willpower?<br>
+        What if it was about having <span class="gradient-text">the right system</span>?
+      </h2>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">The Solution</span>
+        <h2 class="section-title">Meet HabitForge: Where Consistency Becomes Automatic</h2>
+        <p class="section-subtitle">
+          The complete habit tracking system used by 10,000+ entrepreneurs, students, and professionals to build unbreakable routines.
+        </p>
+      </div>
+      
+      <div class="feature-grid">
+        <div class="feature fade-in-scroll">
+          <div class="feature-content">
+            <h3><span class="feature-icon">⚡</span> 5-Minute Setup. Lifetime Results.</h3>
+            <p>No learning curve. No complicated configuration. Add your habits, start tracking. The video tutorial shows you everything step-by-step.</p>
+            <ul class="feature-list">
+              <li>Works in Google Sheets & Excel (you already have it)</li>
+              <li>Pre-built formulas do the math automatically</li>
+              <li>Start tracking the same day you download</li>
+            </ul>
           </div>
-          <div class="feature-image">
-            <img src="./images/feature-setup.png" alt="Simple 5-minute setup showing how to add your first habits to HabitForge" loading="lazy" width="800" height="600">
+          <div class="feature-image-wrapper">
+            <div class="feature-image">
+              <img src="./images/feature-setup.webp" alt="HabitForge quick setup interface showing simple habit entry" loading="lazy" width="800" height="600">
+            </div>
           </div>
         </div>
-
-        <div class="feature fade-in">
-          <div class="feature-text">
-            <h3><span class="icon">📊</span> See Progress at a Glance</h3>
-            <p>Color-coded charts and automatic calculations show exactly where you stand. Visual feedback keeps you motivated. Watch your consistency climb day by day.</p>
+        
+        <div class="feature fade-in-scroll">
+          <div class="feature-content">
+            <h3><span class="feature-icon">📊</span> Visual Progress That Actually Motivates</h3>
+            <p>See your consistency climb in real-time. Color-coded charts turn boring data into visual wins that keep you coming back.</p>
+            <ul class="feature-list">
+              <li>Automatic progress charts (no manual work)</li>
+              <li>Color-coded scores show where you're crushing it</li>
+              <li>Top 10 dashboard ranks your best habits</li>
+            </ul>
           </div>
-          <div class="feature-image">
-            <img src="./images/feature-charts.png" alt="Color-coded progress charts showing 30-day habit consistency scores with automatic analytics" loading="lazy" width="800" height="600">
-          </div>
-        </div>
-
-        <div class="feature fade-in">
-          <div class="feature-text">
-            <h3><span class="icon">🎯</span> Track Everything That Matters</h3>
-            <p>Daily, weekly, and monthly habits all in one place. Plus goal-setting templates for short and long-term planning. Track work, health, learning, relationships, finances—everything.</p>
-          </div>
-          <div class="feature-image">
-            <img src="./images/feature-tracking.png" alt="Comprehensive tracking system showing daily, weekly, and monthly habit views" loading="lazy" width="800" height="600">
+          <div class="feature-image-wrapper">
+            <div class="feature-image">
+              <img src="./images/feature-charts.webp" alt="Color-coded progress charts showing 30-day habit consistency" loading="lazy" width="800" height="600">
+            </div>
           </div>
         </div>
-
-        <div class="feature fade-in">
-          <div class="feature-text">
-            <h3><span class="icon">📈</span> Stay Motivated with Visual Wins</h3>
-            <p>Watch your consistency climb. See your top habits automatically ranked. Celebrate your progress with the Top 10 Performance Dashboard that shows your best streaks.</p>
+        
+        <div class="feature fade-in-scroll">
+          <div class="feature-content">
+            <h3><span class="feature-icon">🎯</span> Track Everything, Everywhere</h3>
+            <p>Daily, weekly, monthly habits all in one system. Plus goal-setting templates that connect your daily actions to your big-picture vision.</p>
+            <ul class="feature-list">
+              <li>30+ daily habits tracked simultaneously</li>
+              <li>Weekly & monthly routine builders</li>
+              <li>Short-term and long-term goal integration</li>
+            </ul>
           </div>
-          <div class="feature-image">
-            <img src="./images/feature-analytics.png" alt="Performance dashboard showing top 10 habits with streak counts and consistency percentages" loading="lazy" width="800" height="600">
-          </div>
-        </div>
-
-        <div class="feature fade-in">
-          <div class="feature-text">
-            <h3><span class="icon">💼</span> 29 Bonus Templates Included</h3>
-            <p>Business tools, financial planners, health trackers, and more. Everything you need for complete life organization. Task planners, CRM systems, budget trackers—all included FREE.</p>
-          </div>
-          <div class="feature-image">
-            <img src="./images/feature-bonuses.png" alt="Preview of 29 bonus templates including business, financial, and personal productivity tools" loading="lazy" width="800" height="600">
+          <div class="feature-image-wrapper">
+            <div class="feature-image">
+              <img src="./images/feature-tracking.webp" alt="Comprehensive habit tracking dashboard" loading="lazy" width="800" height="600">
+            </div>
           </div>
         </div>
-
-        <div class="feature fade-in">
-          <div class="feature-text">
-            <h3><span class="icon">🔒</span> Yours Forever</h3>
-            <p>One-time payment. No subscriptions. Works offline. Your data stays yours. Complete control, complete ownership. Use it for life, on any device.</p>
+        
+        <div class="feature fade-in-scroll">
+          <div class="feature-content">
+            <h3><span class="feature-icon">📈</span> Stay Motivated with Visual Wins</h3>
+            <p>Watch your consistency climb. See your top habits automatically ranked. Celebrate your progress with clear visual feedback that makes success obvious.</p>
+            <ul class="feature-list">
+              <li>Visual analytics dashboard showing trends</li>
+              <li>Top 10 performance rankings automatically updated</li>
+              <li>Color-coded success indicators</li>
+            </ul>
           </div>
-          <div class="feature-image">
-            <img src="./images/feature-ownership.png" alt="HabitForge works offline with lifetime access and no subscriptions required" loading="lazy" width="800" height="600">
+          <div class="feature-image-wrapper">
+            <div class="feature-image">
+              <img src="./images/feature-analytics.webp" alt="Visual analytics dashboard showing top 10 habit rankings" loading="lazy" width="800" height="600">
+            </div>
           </div>
         </div>
+        
+        <div class="feature fade-in-scroll">
+          <div class="feature-content">
+            <h3><span class="feature-icon">💼</span> 29 Bonus Templates Included</h3>
+            <p>Business tools, financial planners, health trackers, and more. Everything you need for complete life organization. Worth $290+ in value.</p>
+            <ul class="feature-list">
+              <li>17 business & productivity templates</li>
+              <li>7 financial planning tools</li>
+              <li>5 personal & lifestyle trackers</li>
+            </ul>
+          </div>
+          <div class="feature-image-wrapper">
+            <div class="feature-image">
+              <img src="./images/feature-bonuses.webp" alt="Preview of 29 bonus templates including business, finance, and lifestyle tools" loading="lazy" width="800" height="600">
+            </div>
+          </div>
+        </div>
+        
+        <div class="feature fade-in-scroll">
+          <div class="feature-content">
+            <h3><span class="feature-icon">🔒</span> Yours Forever</h3>
+            <p>One-time payment. No subscriptions. Works offline. Your data stays yours. Complete control, complete ownership. Use it for life.</p>
+            <ul class="feature-list">
+              <li>One $37 payment, lifetime access</li>
+              <li>No monthly fees or recurring charges</li>
+              <li>All future updates included free</li>
+            </ul>
+          </div>
+          <div class="feature-image-wrapper">
+            <div class="feature-image">
+              <img src="./images/feature-ownership.webp" alt="Lifetime access illustration showing one-time payment benefits" loading="lazy" width="800" height="600">
+            </div>
+          </div>
       </div>
     </div>
   </section>
 
   <!-- How It Works -->
-  <section class="how-it-works">
+  <section class="section" style="background: var(--color-slate-50);">
     <div class="container">
       <div class="section-header">
-        <h2>Get Started in 3 Simple Steps</h2>
+        <span class="section-badge">How It Works</span>
+        <h2 class="section-title">Start Building Habits in 3 Simple Steps</h2>
       </div>
-
-      <div class="steps">
-        <div class="step fade-in">
+      
+      <div class="steps-container">
+        <div class="step fade-in-scroll">
           <div class="step-number">1</div>
           <h3>Download</h3>
-          <p>Instant access to Google Sheets and Excel versions of all 30 templates. Delivered immediately after purchase.</p>
+          <p>Instant access to all 30 templates. Google Sheets & Excel versions included. No waiting.</p>
         </div>
-
-        <div class="step fade-in">
+        
+        <div class="step fade-in-scroll">
           <div class="step-number">2</div>
           <h3>Customize</h3>
-          <p>Add your habits in 5 minutes. Video tutorial shows you exactly how. No technical skills needed.</p>
+          <p>Add your habits in under 5 minutes. Video tutorial walks you through everything.</p>
         </div>
-
-        <div class="step fade-in">
+        
+        <div class="step fade-in-scroll">
           <div class="step-number">3</div>
-          <h3>Track</h3>
-          <p>Check boxes daily and watch your progress grow automatically. 30 seconds per day to build lasting habits.</p>
+          <h3>Track Daily</h3>
+          <p>Check boxes each morning. Watch progress grow automatically. Build unbreakable streaks.</p>
         </div>
       </div>
-
-      <div style="text-align: center; margin-top: var(--spacing-xl); color: var(--text-secondary);">
-        <p>That's it. No learning curve. No complicated setup. Just simple, effective tracking.</p>
-      </div>
+      
+      <p style="text-align: center; margin-top: var(--space-12); color: var(--color-slate-600); font-size: 19px; font-weight: 600;">
+        That's it. No complicated onboarding. No steep learning curve. Just simple, effective habit tracking.
+      </p>
     </div>
   </section>
 
   <!-- Value Stack -->
-  <section class="value-stack">
+  <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Everything You Get Today</h2>
-        <p>Complete system + 29 bonus templates</p>
+        <span class="section-badge">Complete Package</span>
+        <h2 class="section-title">Everything You Need to Succeed</h2>
+        <p class="section-subtitle">
+          One payment. Lifetime access. 30 complete templates. Zero subscriptions.
+        </p>
       </div>
-
-      <div class="value-content">
-        <div class="value-list">
-          <h3>Main Habit Tracker System</h3>
-          <ul>
-            <li>Daily Habit Tracker (Track 30+ habits)</li>
-            <li>Weekly Habit Planner (Custom weekly goals)</li>
-            <li>Monthly Routine Builder (28 monthly habits)</li>
-            <li>Automatic Progress Charts & Analytics</li>
-            <li>Top 10 Performance Dashboard</li>
-            <li>Goal Setting Templates (Weekly/Monthly/Yearly)</li>
-            <li>5-Minute Video Tutorial</li>
-            <li>16-Page Quick Start Guide (PDF)</li>
-            <li>Lifetime Updates (All improvements FREE)</li>
-            <li>Works in Google Sheets & Microsoft Excel</li>
-          </ul>
-
-          <h3 style="margin-top: var(--spacing-xl);">29 FREE Bonus Templates</h3>
-          
-          <h4 style="margin-top: var(--spacing-md); font-size: 18px; color: var(--text-primary);">Business & Productivity (17 Templates)</h4>
-          <ul>
-            <li>Task Planner</li>
-            <li>To-Do List</li>
-            <li>CRM System</li>
-            <li>Client Tracker</li>
-            <li>Sales Tracker</li>
-            <li>Leads Tracker</li>
-            <li>Project Management</li>
-            <li>Gantt Chart</li>
-            <li>Attendance Tracker</li>
-            <li>Employee Tracker</li>
-            <li>Inventory Management</li>
-            <li>Accounting Tracker</li>
-            <li>Product Price Calculator</li>
-            <li>Sales Target Sheet</li>
-            <li>Budget Planner</li>
-            <li>Finance Tracker</li>
-            <li>Social Media Content Planner</li>
-          </ul>
-
-          <h4 style="margin-top: var(--spacing-md); font-size: 18px; color: var(--text-primary);">Financial Planning (7 Templates)</h4>
-          <ul>
-            <li>Year Finance Planner</li>
-            <li>Cashflow Tracker</li>
-            <li>Profit & Loss Dashboard</li>
-            <li>Income & Expense Tracker</li>
-            <li>Household Budget Planner</li>
-            <li>Budget Planner</li>
-            <li>Finance Tracker</li>
-          </ul>
-
-          <h4 style="margin-top: var(--spacing-md); font-size: 18px; color: var(--text-primary);">Personal & Lifestyle (5 Templates)</h4>
-          <ul>
-            <li>Goal Tracker</li>
-            <li>Daily Journal</li>
-            <li>Weekly Planner</li>
-            <li>Meal Planner</li>
-            <li>Weight Loss Tracker</li>
-          </ul>
+      
+      <div class="value-stack-wrapper fade-in-scroll">
+        <div class="value-stack-header">
+          <h2>The HabitForge Complete System</h2>
+          <p>Worth $372. Yours today for just $37.</p>
         </div>
-
-        <div class="value-breakdown">
-          <h3>Value Breakdown</h3>
+        
+        <div class="value-grid">
+          <div class="value-column">
+            <h3>Main Habit Tracker System</h3>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Daily Habit Tracker (Track 30+ habits daily)</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Weekly Habit Planner (Custom weekly goals)</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Monthly Routine Builder (28 monthly habits)</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Automatic Progress Charts & Analytics</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Top 10 Performance Dashboard</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Goal Setting Templates (Weekly/Monthly/Yearly)</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>5-Minute Video Tutorial</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>16-Page Quick Start Guide (PDF)</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Lifetime Updates (All improvements FREE)</span>
+            </div>
+            <div class="value-item">
+              <span class="check-icon">✓</span>
+              <span>Works in Google Sheets & Microsoft Excel</span>
+            </div>
+            
+            <div style="margin-top: var(--space-8);">
+              <h3>29 FREE Bonus Templates</h3>
+              
+              <div class="bonus-category">
+                <strong>Business & Productivity (17 Templates):</strong>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Task Planner • To-Do List • CRM System • Client Tracker</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Sales Tracker • Leads Tracker • Project Management</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Gantt Chart • Attendance • Employee Tracker</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Inventory Management • Accounting Tracker</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Product Price Calculator • Sales Target Sheet</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Budget Planner • Finance Tracker</span>
+                </div>
+              </div>
+              
+              <div class="bonus-category">
+                <strong>Financial Planning (7 Templates):</strong>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Year Finance Planner • Cashflow Tracker</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Profit & Loss Dashboard • Income & Expense Tracker</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Household Budget Planner</span>
+                </div>
+              </div>
+              
+              <div class="bonus-category">
+                <strong>Personal & Lifestyle (5 Templates):</strong>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Daily Journal • Meal Planner • Weight Loss Tracker</span>
+                </div>
+                <div class="value-item">
+                  <span class="check-icon">✓</span>
+                  <span>Weekly Planner • Menu & Grocery Planner</span>
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <div class="value-item">
-            <span>Main Habit Tracker System</span>
-            <span>$37</span>
-          </div>
-          <div class="value-item">
-            <span>Goal Setting Templates</span>
-            <span>$12</span>
-          </div>
-          <div class="value-item">
-            <span>Video Tutorial + Guide</span>
-            <span>$18</span>
-          </div>
-          <div class="value-item">
-            <span>Lifetime Updates</span>
-            <span>$15</span>
-          </div>
-          <div class="value-item">
-            <span>29 Bonus Templates</span>
-            <span>$290</span>
-          </div>
-
-          <div class="value-total">
-            <div class="small">Total Value:</div>
-            <div class="big-price">$372</div>
-            <div class="small">Your Price Today:</div>
-            <div class="big-price">$37</div>
-          </div>
-
-          <div class="savings">
-            YOU SAVE $335 (90% OFF)
-          </div>
-
-          <div style="margin-top: var(--spacing-xl); padding-top: var(--spacing-xl); border-top: 1px solid rgba(255,255,255,0.2);">
-            <h4 style="margin-bottom: var(--spacing-md);">Compare to Alternatives:</h4>
-            <div style="font-size: 14px; line-height: 1.8;">
-              <div>Habit Tracking Apps: $60-120/year</div>
-              <div>Notion Template Bundle: $79-149</div>
-              <div>Individual Templates: $10-15 each × 30 = $300+</div>
-              <div>Custom Spreadsheet Build: 20+ hours</div>
+          <div class="value-column">
+            <div class="pricing-box">
+              <div class="pricing-row">
+                <span>Main Habit Tracker System</span>
+                <span>$37</span>
+              </div>
+              <div class="pricing-row">
+                <span>Goal Setting Templates</span>
+                <span>$12</span>
+              </div>
+              <div class="pricing-row">
+                <span>Video Tutorial + Guide</span>
+                <span>$18</span>
+              </div>
+              <div class="pricing-row">
+                <span>Lifetime Updates</span>
+                <span>$15</span>
+              </div>
+              <div class="pricing-row">
+                <span>29 Bonus Templates</span>
+                <span>$290</span>
+              </div>
+              <div class="pricing-row total">
+                <span>Total Value</span>
+                <span>$372</span>
+              </div>
+              <div class="pricing-row final">
+                <span>Your Price</span>
+                <span>$37</span>
+              </div>
+              <div class="pricing-row savings">
+                <span>You Save</span>
+                <span>$335 (90%)</span>
+              </div>
+            </div>
+            
+            <div style="margin-top: var(--space-8); padding: var(--space-6); background: var(--color-slate-50); border-radius: 16px;">
+              <h4 style="font-size: 18px; font-weight: 700; color: var(--color-slate-900); margin-bottom: var(--space-4);">Compare the Costs:</h4>
+              <div style="font-size: 15px; color: var(--color-slate-600); line-height: 2;">
+                <div>Habit apps: <strong style="color: var(--color-slate-900);">$60-120/year</strong></div>
+                <div>Notion templates: <strong style="color: var(--color-slate-900);">$79-149</strong></div>
+                <div>Individual templates: <strong style="color: var(--color-slate-900);">$10-15 each</strong></div>
+                <div>Productivity coach: <strong style="color: var(--color-slate-900);">$200-500</strong></div>
+                <div style="margin-top: var(--space-4); padding-top: var(--space-4); border-top: 2px solid var(--color-slate-300); font-size: 17px;">
+                  HabitForge: <strong style="color: var(--color-blue-600); font-size: 20px;">$37 one-time</strong>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div style="text-align: center; margin-top: var(--spacing-2xl);">
-        <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="btn btn-primary gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">Get Complete System - $37</a>
-        <p class="btn-note">One-time payment • Lifetime access • 30 templates total</p>
+        
+        <div style="text-align: center; margin-top: var(--space-12);">
+          <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
+            Get Complete System - $37
+            <span>→</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Comparison Table -->
-  <section class="comparison">
+  <section class="section" style="background: var(--color-slate-50);">
     <div class="container">
       <div class="section-header">
-        <h2>How HabitForge Compares</h2>
-        <p>See why 10,000+ people chose HabitForge</p>
+        <span class="section-badge">Comparison</span>
+        <h2 class="section-title">How HabitForge Stacks Up</h2>
       </div>
-
-      <div class="comparison-table">
-        <table>
+      
+      <div class="comparison-wrapper fade-in-scroll">
+        <table class="comparison-table">
           <thead>
             <tr>
               <th>Feature</th>
@@ -1307,23 +1938,16 @@
             <tr>
               <td><strong>Automatic analytics</strong></td>
               <td><span class="check">✓</span></td>
-              <td>⚠️ Complex</td>
+              <td><span class="warning">⚠</span> Complex</td>
               <td><span class="cross">✗</span></td>
               <td class="highlight"><span class="check">✓</span></td>
             </tr>
             <tr>
               <td><strong>Easy customization</strong></td>
               <td><span class="cross">✗</span> Locked</td>
-              <td>⚠️ Learning curve</td>
-              <td>⚠️ Time-intensive</td>
+              <td><span class="warning">⚠</span> Learning curve</td>
+              <td><span class="warning">⚠</span> Time-intensive</td>
               <td class="highlight"><span class="check">✓</span> Simple</td>
-            </tr>
-            <tr>
-              <td><strong>No subscriptions</strong></td>
-              <td><span class="cross">✗</span></td>
-              <td><span class="check">✓</span></td>
-              <td><span class="check">✓</span></td>
-              <td class="highlight"><span class="check">✓</span></td>
             </tr>
             <tr>
               <td><strong>Bonus templates</strong></td>
@@ -1341,8 +1965,8 @@
             </tr>
             <tr>
               <td><strong>Data ownership</strong></td>
-              <td>⚠️ Cloud only</td>
-              <td>⚠️ Cloud only</td>
+              <td><span class="warning">⚠</span> Cloud only</td>
+              <td><span class="warning">⚠</span> Cloud only</td>
               <td><span class="check">✓</span></td>
               <td class="highlight"><span class="check">✓</span></td>
             </tr>
@@ -1353,152 +1977,177 @@
   </section>
 
   <!-- Testimonials -->
-  <section class="testimonials">
+  <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Trusted by 10,000+ People Building Better Habits</h2>
-        <p>Real users, real results</p>
+        <span class="section-badge">Success Stories</span>
+        <h2 class="section-title">Join 10,000+ People Building Better Habits</h2>
+        <p class="section-subtitle">Real people. Real results. No fluff.</p>
       </div>
-
+      
       <div class="testimonials-grid">
-        <div class="testimonial fade-in">
-          <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-text">"I've tried 12 different habit apps over 5 years. This spreadsheet is the only system I've stuck with for 6+ months. The simplicity and complete control make all the difference. Worth every penny."</p>
-          <div class="testimonial-header" style="margin-top: var(--spacing-md);">
-            <div class="testimonial-image">
-              <img src="./images/testimonials/sarah-m.jpg" alt="Sarah M. - Product Manager, San Francisco" loading="lazy">
-            </div>
+        <div class="testimonial fade-in-scroll">
+          <div class="testimonial-header">
+            <img src="./images/testimonials/sarah-m.webp" alt="Sarah M. - Product Manager, San Francisco" class="testimonial-avatar" loading="lazy" width="72" height="72">
             <div class="testimonial-info">
               <h4>Sarah M.</h4>
               <p>Product Manager, San Francisco</p>
             </div>
           </div>
-        </div>
-
-        <div class="testimonial fade-in">
+          <p class="testimonial-text">"I've tried 12 different habit apps over 5 years. This spreadsheet is the only system I've stuck with for 6+ months. The simplicity and complete control make all the difference. Worth every penny."</p>
           <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-text">"Finally, a habit tracker that doesn't require a PhD to use. Set it up in 5 minutes, been using it daily for 4 months straight. The bonus business templates saved me hundreds of dollars."</p>
-          <div class="testimonial-header" style="margin-top: var(--spacing-md);">
-            <div class="testimonial-image">
-              <img src="./images/testimonials/michael-c.jpg" alt="Michael C. - Entrepreneur, Austin" loading="lazy">
-            </div>
+        </div>
+        
+        <div class="testimonial fade-in-scroll">
+          <div class="testimonial-header">
+            <img src="./images/testimonials/michael-c.webp" alt="Michael C. - Entrepreneur, Austin" class="testimonial-avatar" loading="lazy" width="72" height="72">
             <div class="testimonial-info">
               <h4>Michael C.</h4>
               <p>Entrepreneur, Austin</p>
             </div>
           </div>
-        </div>
-
-        <div class="testimonial fade-in">
+          <p class="testimonial-text">"Finally, a habit tracker that doesn't require a PhD to use. Set it up in 5 minutes, been using it daily for 4 months straight. The bonus business templates saved me hundreds of dollars."</p>
           <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-text">"As a teacher with limited time, I needed something simple. This is it. 30 seconds every morning to check boxes. Three months in and I've never been more consistent with my health and work habits."</p>
-          <div class="testimonial-header" style="margin-top: var(--spacing-md);">
-            <div class="testimonial-image">
-              <img src="./images/testimonials/jennifer-l.jpg" alt="Jennifer L. - High School Teacher, Seattle" loading="lazy">
-            </div>
+        </div>
+        
+        <div class="testimonial fade-in-scroll">
+          <div class="testimonial-header">
+            <img src="./images/testimonials/jennifer-l.webp" alt="Jennifer L. - High School Teacher, Seattle" class="testimonial-avatar" loading="lazy" width="72" height="72">
             <div class="testimonial-info">
               <h4>Jennifer L.</h4>
               <p>High School Teacher, Seattle</p>
             </div>
           </div>
-        </div>
-
-        <div class="testimonial fade-in">
+          <p class="testimonial-text">"As a teacher with limited time, I needed something simple. This is it. 30 seconds every morning to check boxes. Three months in and I've never been more consistent."</p>
           <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-text">"The financial planning templates alone are worth $100+. Getting 29 bonus templates with the habit tracker is insane value. Best $37 I've spent on productivity this year."</p>
-          <div class="testimonial-header" style="margin-top: var(--spacing-md);">
-            <div class="testimonial-image">
-              <img src="./images/testimonials/david-r.jpg" alt="David R. - Software Engineer, Denver" loading="lazy">
-            </div>
+        </div>
+        
+        <div class="testimonial fade-in-scroll">
+          <div class="testimonial-header">
+            <img src="./images/testimonials/david-r.webp" alt="David R. - Software Engineer, Denver" class="testimonial-avatar" loading="lazy" width="72" height="72">
             <div class="testimonial-info">
               <h4>David R.</h4>
               <p>Software Engineer, Denver</p>
             </div>
           </div>
-        </div>
-
-        <div class="testimonial fade-in">
+          <p class="testimonial-text">"The financial planning templates alone are worth $100+. Getting 29 bonus templates with the habit tracker is insane value. Best $37 I've spent on productivity."</p>
           <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-text">"I'm not tech-savvy, but this was incredibly easy to set up. The video tutorial walked me through everything. Now I track my health, work, and personal goals all in one place."</p>
-          <div class="testimonial-header" style="margin-top: var(--spacing-md);">
-            <div class="testimonial-image">
-              <img src="./images/testimonials/lisa-k.jpg" alt="Lisa K. - Freelance Designer, Portland" loading="lazy">
-            </div>
+        </div>
+        
+        <div class="testimonial fade-in-scroll">
+          <div class="testimonial-header">
+            <img src="./images/testimonials/lisa-k.webp" alt="Lisa K. - Freelance Designer, Portland" class="testimonial-avatar" loading="lazy" width="72" height="72">
             <div class="testimonial-info">
               <h4>Lisa K.</h4>
               <p>Freelance Designer, Portland</p>
             </div>
           </div>
-        </div>
-
-        <div class="testimonial fade-in">
+          <p class="testimonial-text">"I'm not tech-savvy, but this was incredibly easy to set up. The video tutorial walked me through everything. Now I track my health, work, and personal goals all in one place."</p>
           <div class="testimonial-rating">★★★★★</div>
-          <p class="testimonial-text">"After years of failed New Year's resolutions, I finally have a system that works. The visual progress charts keep me motivated. I've maintained a 90-day streak tracking 15 habits daily."</p>
-          <div class="testimonial-header" style="margin-top: var(--spacing-md);">
-            <div class="testimonial-image">
-              <img src="./images/testimonials/alex-w.jpg" alt="Alex W. - Marketing Director, Chicago" loading="lazy">
-            </div>
+        </div>
+        
+        <div class="testimonial fade-in-scroll">
+          <div class="testimonial-header">
+            <img src="./images/testimonials/alex-w.webp" alt="Alex W. - Marketing Director, Chicago" class="testimonial-avatar" loading="lazy" width="72" height="72">
             <div class="testimonial-info">
               <h4>Alex W.</h4>
               <p>Marketing Director, Chicago</p>
             </div>
           </div>
+          <p class="testimonial-text">"Tracked 120 consecutive days using HabitForge. The visual feedback is incredible. Seeing those green checkmarks pile up creates momentum that's genuinely addictive in the best way."</p>
+          <div class="testimonial-rating">★★★★★</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
+  <section class="section" style="background: var(--color-slate-50);">
     <div class="container">
       <div class="section-header">
-        <h2>Frequently Asked Questions</h2>
+        <span class="section-badge">Questions?</span>
+        <h2 class="section-title">Everything You Need to Know</h2>
       </div>
-
+      
       <div class="faq-list">
         <div class="faq-item">
-          <div class="faq-question">Do I need spreadsheet expertise to use this?</div>
-          <div class="faq-answer">Not at all. If you can click a checkbox, you can use HabitForge. We include a 5-minute video tutorial that shows you everything step-by-step. Most users are set up and tracking within 10 minutes.</div>
+          <button class="faq-question">
+            Do I need spreadsheet expertise to use this?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Not at all. If you can click a checkbox, you can use HabitForge. We include a 5-minute video tutorial that shows you everything step-by-step. Most users are set up and tracking within 10 minutes.
+          </div>
         </div>
-
+        
         <div class="faq-item">
-          <div class="faq-question">Will this work on my device?</div>
-          <div class="faq-answer">Yes! HabitForge works on Mac, PC, iPhone, iPad, Android—anywhere Google Sheets or Microsoft Excel runs. Track on your phone in the morning, review on your computer at night.</div>
+          <button class="faq-question">
+            Will this work on my device?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes! HabitForge works on Mac, PC, iPhone, iPad, Android—anywhere Google Sheets or Microsoft Excel runs. Track on your phone in the morning, review on your computer at night.
+          </div>
         </div>
-
+        
         <div class="faq-item">
-          <div class="faq-question">What's your refund policy?</div>
-          <div class="faq-answer">Due to the digital nature of HabitForge, all sales are generally final. However, we offer a 7-day conditional refund if the file has not been downloaded or significantly used. Refund requests are reviewed individually to ensure fairness.</div>
+          <button class="faq-question">
+            What's your refund policy?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Due to the digital nature of HabitForge, all sales are generally final. However, we offer a 7-day conditional refund if the file has not been downloaded or significantly used. Refund requests are reviewed individually to ensure fairness.
+          </div>
         </div>
-
+        
         <div class="faq-item">
-          <div class="faq-question">Is this a subscription?</div>
-          <div class="faq-answer">Nope! One payment of $37, lifetime access. No recurring charges. No hidden fees. You own it forever, including all future updates we make to the system.</div>
+          <button class="faq-question">
+            Is this a subscription?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Nope! One payment of $37, lifetime access. No recurring charges. No hidden fees. You own it forever, including all future updates we make to the system.
+          </div>
         </div>
-
+        
         <div class="faq-item">
-          <div class="faq-question">Can I track any habits I want?</div>
-          <div class="faq-answer">Completely customizable. Track fitness habits, work tasks, learning goals, health routines, business metrics—whatever matters to you. The system adapts to your needs.</div>
+          <button class="faq-question">
+            Can I track any habits I want?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Completely customizable. Track fitness habits, work tasks, learning goals, health routines, business metrics—whatever matters to you. The system adapts to your needs.
+          </div>
         </div>
-
+        
         <div class="faq-item">
-          <div class="faq-question">How is this different from free templates online?</div>
-          <div class="faq-answer">Free templates lack the complete system: automatic calculations, progress analytics, visual charts, goal integration, video tutorial, and comprehensive guide. Plus, you get 29 professional bonus templates worth $290+. HabitForge is a complete solution, not a basic tracker.</div>
+          <button class="faq-question">
+            How is this different from free templates online?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Free templates lack the complete system: automatic calculations, progress analytics, visual charts, goal integration, video tutorial, and comprehensive guide. Plus, you get 29 professional bonus templates worth $290+. HabitForge is a complete solution, not a basic tracker.
+          </div>
         </div>
-
+        
         <div class="faq-item">
-          <div class="faq-question">What if I need help or have questions?</div>
-          <div class="faq-answer">We provide email support at habitforge24@gmail.com. If you run into any issues or have questions about using HabitForge, just email us and we'll help you out.</div>
+          <button class="faq-question">
+            What if I need help or have questions?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            We provide email support at habitforge24@gmail.com. If you run into any issues or have questions about using HabitForge, just email us and we'll help you out.
+          </div>
         </div>
-
+        
         <div class="faq-item">
-          <div class="faq-question">Do the bonus templates work the same way?</div>
-          <div class="faq-answer">Yes! All 29 bonus templates follow the same simple, user-friendly design. Each is ready to use immediately with clear instructions included.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">Can I share this with my team or family?</div>
-          <div class="faq-answer">The license is for personal use. If you want to use it across a team, please purchase additional licenses or contact us at habitforge24@gmail.com for team pricing options.</div>
+          <button class="faq-question">
+            Do the bonus templates work the same way?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes! All 29 bonus templates follow the same simple, user-friendly design. Each is ready to use immediately with clear instructions included.
+          </div>
         </div>
       </div>
     </div>
@@ -1507,61 +2156,69 @@
   <!-- Final CTA -->
   <section class="final-cta">
     <div class="container">
-      <h2>Start Building Better Habits Today</h2>
-      <p>Join 10,000+ people who've transformed their daily routines with HabitForge</p>
-
-      <div class="cta-box">
-        <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="btn btn-primary gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()" style="background: white; color: var(--secondary);">Get Instant Access - $37</a>
-        <p class="btn-note" style="color: rgba(255,255,255,0.9);">One-time payment • Lifetime access</p>
-
-        <div class="cta-features">
-          <div class="cta-feature">Instant download after purchase</div>
-          <div class="cta-feature">Works on all devices</div>
-          <div class="cta-feature">7-day conditional refund</div>
-          <div class="cta-feature">30 complete templates</div>
-          <div class="cta-feature">Lifetime updates included</div>
-          <div class="cta-feature">Video tutorial + PDF guide</div>
+      <div class="final-cta-content">
+        <h2>30 Days From Now, You'll Either Wish You Started Today... Or Be Grateful You Did.</h2>
+        <p class="section-subtitle">
+          Join 10,000+ people who chose consistency over procrastination.
+        </p>
+        
+        <div class="cta-box">
+          <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button-white gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
+            Get Instant Access - $37 →
+          </a>
+          
+          <div class="trust-badges-final">
+            <span class="trust-badge-final">Instant download</span>
+            <span class="trust-badge-final">Works on all devices</span>
+            <span class="trust-badge-final">7-day conditional refund</span>
+            <span class="trust-badge-final">Lifetime updates</span>
+          </div>
+          
+          <div class="security-line">
+            <span>🔒 Secure checkout via Gumroad</span>
+            <span>•</span>
+            <span>💳 Visa, Mastercard, PayPal, Apple Pay</span>
+          </div>
         </div>
-
-        <div class="security-badges">
-          <p>🔒 Secure checkout powered by Gumroad</p>
-          <p style="font-size: 12px; opacity: 0.7;">Visa • Mastercard • Amex • PayPal • Apple Pay</p>
-          <p style="margin-top: var(--spacing-sm);">★★★★★ Rated 4.8/5 by 2,341 users</p>
+        
+        <div class="ps-section">
+          <p><strong>P.S.</strong> - This is a one-time payment for lifetime access. No subscriptions. No recurring charges. Just $37 for a complete system that helps you build lasting habits. If you spend $5 on coffee daily, that's $35/week. This costs less than two lattes and lasts forever.</p>
+          
+          <p><strong>P.P.S.</strong> - 10,000+ people are already using HabitForge to track their habits, achieve their goals, and transform their daily routines. The only question is: Will you join them today, or keep starting over every Monday?</p>
         </div>
-      </div>
-
-      <div class="ps-section">
-        <p><strong>P.S.</strong> - Remember: This is a one-time payment for lifetime access. No subscriptions. No recurring charges. Just $37 for a complete system that helps you build lasting habits.</p>
-        <p><strong>P.P.S.</strong> - 10,000+ people are already using HabitForge to track their habits, achieve their goals, and transform their lives. Will you join them today?</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
-          <a href="refund-policy.html">Refund Policy</a>
-          <a href="disclaimer.html">Disclaimer</a>
-        </div>
-        <div class="footer-contact">
-          <p>Questions or support?</p>
-          <p><a href="mailto:habitforge24@gmail.com">habitforge24@gmail.com</a></p>
-        </div>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="mailto:habitforge24@gmail.com">Contact</a>
       </div>
-
-      <div class="footer-bottom">
-        <p class="copyright">© 2025 HabitForge. All rights reserved.</p>
+      
+      <div class="footer-copyright">
+        © 2025 HabitForge. All rights reserved.
+      </div>
+      
+      <div class="footer-disclaimers">
+        <div class="disclaimer">
+          <strong>DIGITAL PRODUCT NOTICE</strong>
+          This is a digital download delivered immediately upon purchase. Compatible with Google Sheets and Microsoft Excel. All sales are generally final due to the nature of digital products.
+        </div>
         
-        <div class="disclaimers">
-          <p><strong>DIGITAL PRODUCT NOTICE:</strong> This is a digital download delivered immediately upon purchase. Compatible with Google Sheets and Microsoft Excel. All sales are generally final due to the nature of digital products. A 7-day conditional refund may be granted if the file has not been downloaded or significantly used.</p>
-          
-          <p><strong>RESULTS DISCLAIMER:</strong> Testimonials represent individual experiences. Your results depend on effort, consistency, and personal circumstances. We make no guarantee of specific outcomes. Individual results will vary.</p>
-          
-          <p><strong>FACEBOOK DISCLAIMER:</strong> This website is not part of the Facebook website or Meta Inc. This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of Meta Platforms, Inc.</p>
+        <div class="disclaimer">
+          <strong>RESULTS DISCLAIMER</strong>
+          Testimonials represent individual experiences. Your results depend on effort, consistency, and personal circumstances. We make no guarantee of specific outcomes. Individual results will vary.
+        </div>
+        
+        <div class="disclaimer">
+          <strong>FACEBOOK DISCLAIMER</strong>
+          This website is not part of the Facebook website or Meta Inc. This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of Meta Platforms, Inc.
         </div>
       </div>
     </div>
@@ -1569,99 +2226,72 @@
 
   <!-- JavaScript -->
   <script>
-    // Facebook Pixel - InitiateCheckout tracking
-    function trackCheckout() {
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'InitiateCheckout', {
-          content_name: 'HabitForge Complete System',
-          value: 37.00,
-          currency: 'USD'
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const item = this.parentElement;
+        const wasActive = item.classList.contains('active');
+        
+        document.querySelectorAll('.faq-item').forEach(faqItem => {
+          faqItem.classList.remove('active');
         });
-      }
-    }
+        
+        if (!wasActive) {
+          item.classList.add('active');
+        }
+      });
+    });
 
-    // Scroll depth tracking for Facebook Pixel
-    let scrollTracked = {
-      '25': false,
-      '50': false,
-      '75': false,
-      '90': false
-    };
+    // Scroll depth tracking
+    let scrollTracked = { '25': false, '50': false, '75': false, '90': false };
 
     window.addEventListener('scroll', function() {
       const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
       
       if (scrollPercent >= 25 && !scrollTracked['25']) {
-        if (typeof fbq !== 'undefined') fbq('trackCustom', 'Scroll25');
+        fbq('trackCustom', 'Scroll25');
         scrollTracked['25'] = true;
       }
       if (scrollPercent >= 50 && !scrollTracked['50']) {
-        if (typeof fbq !== 'undefined') fbq('trackCustom', 'Scroll50');
+        fbq('trackCustom', 'Scroll50');
         scrollTracked['50'] = true;
       }
       if (scrollPercent >= 75 && !scrollTracked['75']) {
-        if (typeof fbq !== 'undefined') fbq('trackCustom', 'Scroll75');
+        fbq('trackCustom', 'Scroll75');
         scrollTracked['75'] = true;
       }
       if (scrollPercent >= 90 && !scrollTracked['90']) {
-        if (typeof fbq !== 'undefined') fbq('trackCustom', 'Scroll90');
+        fbq('trackCustom', 'Scroll90');
         scrollTracked['90'] = true;
       }
     });
 
-    // FAQ Accordion
-    document.addEventListener('DOMContentLoaded', function() {
-      const faqQuestions = document.querySelectorAll('.faq-question');
-      
-      faqQuestions.forEach(question => {
-        question.addEventListener('click', function() {
-          this.classList.toggle('active');
-          const answer = this.nextElementSibling;
-          answer.classList.toggle('active');
-        });
+    // CTA tracking
+    function trackCheckout() {
+      fbq('track', 'InitiateCheckout', {
+        content_name: 'HabitForge Complete System',
+        value: 37.00,
+        currency: 'USD'
       });
+    }
 
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
       });
+    }, observerOptions);
 
-      // Intersection Observer for fade-in animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }
-        });
-      }, observerOptions);
-
-      document.querySelectorAll('.fade-in').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-      });
+    document.querySelectorAll('.fade-in-scroll').forEach(el => {
+      observer.observe(el);
     });
   </script>
 </body>
-</html>stars">★★★★★</span>
-              <span>4.8/5 rating</span>
-            </div>
-            <div class="trust-item">
-              <span class="icon">✓</span>
-              <span>10,000+ downloads</span>
-            </div>
-            <div class="trust-item">
-              <span class="
+</html>
