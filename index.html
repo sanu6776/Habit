@@ -178,6 +178,11 @@
       transition: all 0.3s ease;
       border: none;
       cursor: pointer;
+      font-family: var(--font-sans) !important;
+    }
+    
+    .header-cta::after {
+      content: none !important;
     }
     
     .header-cta:hover {
@@ -299,6 +304,15 @@
     .cta-button:hover {
       transform: translateY(-3px);
       box-shadow: 0 20px 60px -10px rgba(59, 130, 246, 0.6);
+    }
+    
+    /* Remove Gumroad branding */
+    .gumroad-button {
+      font-family: var(--font-sans) !important;
+    }
+    
+    .gumroad-button::after {
+      content: none !important;
     }
     
     .trust-badges {
@@ -1138,6 +1152,11 @@
       border: none;
       cursor: pointer;
       width: 100%;
+      font-family: var(--font-sans) !important;
+    }
+    
+    .cta-button-white::after {
+      content: none !important;
     }
     
     .cta-button-white:hover {
