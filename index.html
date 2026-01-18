@@ -2694,8 +2694,38 @@
     })
   });
 </script>
-  
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cta = document.querySelector(".cta-button");
+    if (!cta) return;
+
+    cta.addEventListener(
+      "click",
+      function (e) {
+        e.preventDefault();
+
+        const destination = cta.getAttribute("href");
+
+        fetch("/.netlify/functions/track-cta", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            page: window.location.href
+          })
+        }).finally(function () {
+          window.location.href = destination;
+        });
+      },
+      { once: true }
+    );
+  });
+</script>
+
 </body>
 </html>
+
 
 
