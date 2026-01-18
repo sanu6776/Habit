@@ -33,7 +33,6 @@ exports.handler = async (event) => {
 
     // ===== FACEBOOK CAPI PAYLOAD =====
     const payload = {
-      test_event_code: "TEST34331", // ⚠️ ONLY FOR TESTING (remove later)
       data: [
         {
           event_name: "Purchase",
