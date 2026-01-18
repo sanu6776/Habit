@@ -21,29 +21,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
-  <!-- Gumroad Script -->
-  <script src="https://gumroad.com/js/gumroad.js"></script>
-  
-  <!-- Remove Gumroad Branding Script -->
-  <script>
-    // Remove Gumroad branding from buttons
-    document.addEventListener('DOMContentLoaded', function() {
-      const style = document.createElement('style');
-      style.innerHTML = `
-        .gumroad-button::after,
-        .gumroad-button::before {
-          content: '' !important;
-          display: none !important;
-        }
-        .gumroad-button {
-          font-family: 'Inter', sans-serif !important;
-          letter-spacing: normal !important;
-        }
-      `;
-      document.head.appendChild(style);
-    });
-  </script>
-  
   <!-- Facebook Pixel -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -184,18 +161,18 @@
       text-decoration: none;
     }
     
-    /* Header CTA - Premium */
+    /* Header CTA - Premium Redesign */
     .header-cta {
       display: inline-flex;
       align-items: center;
       gap: var(--space-2);
       padding: var(--space-3) var(--space-6);
-      background: linear-gradient(135deg, var(--color-slate-900) 0%, var(--color-slate-800) 100%);
-      color: white;
-      border-radius: 12px;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: white !important;
+      border-radius: 10px;
       font-weight: 700;
       font-size: 15px;
-      text-decoration: none;
+      text-decoration: none !important;
       transition: all 0.3s ease;
       border: none;
       cursor: pointer;
@@ -210,15 +187,9 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, transparent, rgba(255,255,255,0.1));
+      background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
       opacity: 0;
       transition: opacity 0.3s;
-    }
-    
-    /* FORCE REMOVE GUMROAD TEXT */
-    .header-cta::after {
-      display: none !important;
-      content: '' !important;
     }
     
     .header-cta:hover::before {
@@ -228,6 +199,7 @@
     .header-cta:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(15, 23, 42, 0.4);
+      color: white !important;
     }
     
     /* Hero Section - ULTRA PREMIUM */
@@ -306,81 +278,53 @@
       animation: slideUp 0.8s ease-out 0.4s both;
     }
     
-    /* CTA Buttons - ULTRA PREMIUM */
+    /* CTA Buttons - ULTRA PREMIUM REDESIGN */
     .cta-button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: var(--space-3);
       padding: var(--space-6) var(--space-12);
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
       color: white !important;
-      border-radius: 16px;
-      font-size: 20px;
+      border-radius: 14px;
+      font-size: 19px;
       font-weight: 800;
       text-decoration: none !important;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 20px 60px -15px rgba(102, 126, 234, 0.6),
-                  0 10px 40px -10px rgba(118, 75, 162, 0.4),
-                  inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 8px 32px -8px rgba(139, 92, 246, 0.6),
+                  0 0 0 0 rgba(139, 92, 246, 0.4);
       border: none;
       cursor: pointer;
       position: relative;
       overflow: hidden;
       font-family: var(--font-sans) !important;
-      letter-spacing: -0.02em;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      white-space: nowrap;
+      letter-spacing: -0.01em;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     }
     
     .cta-button::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-      transition: left 0.6s ease;
-    }
-    
-    /* FORCE REMOVE GUMROAD BRANDING */
-    .cta-button::after {
-      display: none !important;
-      content: '' !important;
-      visibility: hidden !important;
-    }
-    
-    .cta-button:hover::before {
-      left: 100%;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.35s ease;
     }
     
     .cta-button:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 30px 80px -15px rgba(102, 126, 234, 0.7),
-                  0 15px 50px -10px rgba(118, 75, 162, 0.5),
-                  inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 48px -8px rgba(139, 92, 246, 0.7),
+                  0 0 0 4px rgba(139, 92, 246, 0.15);
       color: white !important;
     }
     
+    .cta-button:hover::before {
+      opacity: 1;
+    }
+    
     .cta-button:active {
-      transform: translateY(-2px) scale(1.01);
-    }
-    
-    /* Additional Gumroad Override */
-    a.gumroad-button,
-    button.gumroad-button,
-    .gumroad-button {
-      font-family: var(--font-sans) !important;
-      text-decoration: none !important;
-    }
-    
-    a.gumroad-button::after,
-    button.gumroad-button::after,
-    .gumroad-button::after {
-      display: none !important;
-      content: '' !important;
-      visibility: hidden !important;
+      transform: translateY(-1px);
     }
     
     .trust-badges {
@@ -1203,7 +1147,7 @@
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
     
-    /* Final CTA White Button - ULTRA PREMIUM */
+    /* Final CTA White Button - ULTRA PREMIUM REDESIGN */
     .cta-button-white {
       display: inline-flex;
       align-items: center;
@@ -1211,38 +1155,30 @@
       gap: var(--space-3);
       padding: var(--space-6) var(--space-12);
       background: white;
-      color: var(--color-slate-900) !important;
-      border-radius: 16px;
-      font-size: 21px;
+      color: #1e293b !important;
+      border-radius: 14px;
+      font-size: 20px;
       font-weight: 900;
       text-decoration: none !important;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4),
-                  0 10px 30px rgba(0, 0, 0, 0.3),
-                  inset 0 1px 0 rgba(255, 255, 255, 1);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3),
+                  0 0 0 0 rgba(255, 255, 255, 0.5);
       border: none;
       cursor: pointer;
       width: 100%;
       font-family: var(--font-sans) !important;
       position: relative;
       overflow: hidden;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.01em;
     }
     
     .cta-button-white::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(168, 85, 247, 0.08));
       opacity: 0;
-      transition: opacity 0.4s;
-    }
-    
-    /* FORCE REMOVE GUMROAD TEXT */
-    .cta-button-white::after {
-      display: none !important;
-      content: '' !important;
-      visibility: hidden !important;
+      transition: opacity 0.35s;
     }
     
     .cta-button-white:hover::before {
@@ -1250,15 +1186,14 @@
     }
     
     .cta-button-white:hover {
-      transform: translateY(-4px) scale(1.01);
-      box-shadow: 0 35px 80px rgba(0, 0, 0, 0.5),
-                  0 15px 40px rgba(0, 0, 0, 0.4),
-                  inset 0 1px 0 rgba(255, 255, 255, 1);
-      color: var(--color-slate-900) !important;
+      transform: translateY(-4px);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
+                  0 0 0 4px rgba(255, 255, 255, 0.3);
+      color: #1e293b !important;
     }
     
     .cta-button-white:active {
-      transform: translateY(-2px) scale(1);
+      transform: translateY(-2px);
     }
     
     .trust-badges-final {
@@ -1474,6 +1409,26 @@
       .hero-content {
         grid-template-columns: 1fr;
         gap: var(--space-10);
+      }
+      
+      /* Fix hero image centering on mobile */
+      .hero-image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .hero-image {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      
+      .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
       }
       
       .hero-badge {
@@ -1887,7 +1842,7 @@
     <div class="container">
       <div class="header-content">
         <a href="/" class="logo">HABITFORGE</a>
-        <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="header-cta gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
+        <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="header-cta">
           Get Started →
         </a>
       </div>
@@ -1914,8 +1869,8 @@
           </p>
           
           <div class="hero-cta-group">
-            <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
-              Get Instant Access - $37
+            <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button" onclick="trackCheckout()">
+              Get Instant Access — $37
               <span>→</span>
             </a>
             
@@ -2340,8 +2295,8 @@
         </div>
         
         <div style="text-align: center; margin-top: var(--space-12);">
-          <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
-            Get Complete System - $37
+          <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button" onclick="trackCheckout()">
+            Unlock Full System — $37
             <span>→</span>
           </a>
         </div>
@@ -2611,8 +2566,8 @@
         </p>
         
         <div class="cta-box">
-          <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button-white gumroad-button" data-gumroad-overlay="true" onclick="trackCheckout()">
-            Get Instant Access - $37 →
+          <a href="https://habitforge24.gumroad.com/l/bdmxfc" class="cta-button-white" onclick="trackCheckout()">
+            Start Building Habits Today — $37 →
           </a>
           
           <div class="trust-badges-final">
@@ -2674,49 +2629,6 @@
 
   <!-- JavaScript -->
   <script>
-    // Remove Gumroad Branding - AGGRESSIVE APPROACH
-    function removeGumroadBranding() {
-      const style = document.createElement('style');
-      style.innerHTML = `
-        .gumroad-button::after,
-        .gumroad-button::before,
-        a.gumroad-button::after,
-        a.gumroad-button::before,
-        button.gumroad-button::after,
-        button.gumroad-button::before {
-          display: none !important;
-          content: '' !important;
-          visibility: hidden !important;
-          opacity: 0 !important;
-        }
-        .gumroad-button,
-        a.gumroad-button,
-        button.gumroad-button {
-          font-family: 'Inter', sans-serif !important;
-          letter-spacing: normal !important;
-          text-decoration: none !important;
-        }
-      `;
-      document.head.appendChild(style);
-      
-      // Remove any injected Gumroad text
-      setTimeout(() => {
-        document.querySelectorAll('.gumroad-button').forEach(btn => {
-          const observer = new MutationObserver(() => {
-            if (btn.textContent.toLowerCase().includes('gumroad')) {
-              btn.textContent = btn.getAttribute('data-original-text') || btn.textContent.replace(/gumroad/gi, '').trim();
-            }
-          });
-          btn.setAttribute('data-original-text', btn.textContent);
-          observer.observe(btn, { childList: true, subtree: true, characterData: true });
-        });
-      }, 100);
-    }
-    
-    // Run immediately and after DOM load
-    removeGumroadBranding();
-    document.addEventListener('DOMContentLoaded', removeGumroadBranding);
-    
     // FAQ Accordion
     document.querySelectorAll('.faq-question').forEach(question => {
       question.addEventListener('click', function() {
@@ -2766,7 +2678,7 @@
       });
     }
 
-    // Scroll animations
+    // Scroll animations - MOBILE ENABLED
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -2776,12 +2688,17 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          // Optional: unobserve after animation to improve performance
+          // observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in-scroll').forEach(el => {
-      observer.observe(el);
+    // Observe all fade-in elements
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.fade-in-scroll').forEach(el => {
+        observer.observe(el);
+      });
     });
   </script>
 </body>
