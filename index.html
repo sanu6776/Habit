@@ -2738,8 +2738,19 @@
 
     const timeOnPage = (Date.now() - startTime) / 1000;
 
-    if (scrollPercent >= 0.6 && timeOnPage >= 20) {
+    // 🔍 Debug log (can remove later)
+    console.log(
+      "ViewContent check → scroll:",
+      scrollPercent.toFixed(2),
+      "time:",
+      timeOnPage.toFixed(1)
+    );
+
+    // ✅ Realistic intent threshold
+    if (scrollPercent >= 0.45 && timeOnPage >= 15) {
       fired = true;
+
+      console.log("✅ ViewContent triggered");
 
       fetch("/.netlify/functions/track-viewcontent", {
         method: "POST",
@@ -2755,8 +2766,10 @@
 })();
 </script>
 
+
 </body>
 </html>
+
 
 
 
