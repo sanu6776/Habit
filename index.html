@@ -2723,9 +2723,41 @@
     );
   });
 </script>
+  
+<script>
+(function () {
+  let fired = false;
+  const startTime = Date.now();
+
+  function checkIntent() {
+    if (fired) return;
+
+    const scrollPercent =
+      (window.scrollY + window.innerHeight) /
+      document.documentElement.scrollHeight;
+
+    const timeOnPage = (Date.now() - startTime) / 1000;
+
+    if (scrollPercent >= 0.6 && timeOnPage >= 20) {
+      fired = true;
+
+      fetch("/.netlify/functions/track-viewcontent", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          page: window.location.href
+        })
+      });
+    }
+  }
+
+  window.addEventListener("scroll", checkIntent);
+})();
+</script>
 
 </body>
 </html>
+
 
 
 
