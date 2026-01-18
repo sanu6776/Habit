@@ -1,10 +1,8 @@
-const crypto = require("crypto");
-
 exports.handler = async (event) => {
   try {
     const body = JSON.parse(event.body || "{}");
 
-    const pagePath = body.page || "/";
+    const pageUrl = body.page || "unknown";
     const eventTime = Math.floor(Date.now() / 1000);
 
     const PIXEL_ID = process.env.FB_PIXEL_ID;
@@ -18,13 +16,25 @@ exports.handler = async (event) => {
       };
     }
 
+    // Get IP and User Agent (required for PageView matching)
+    const clientIp =
+      event.headers["x-forwarded-for"]?.split(",")[0] ||
+      event.headers["client-ip"] ||
+      "0.0.0.0";
+
+    const userAgent = event.headers["user-agent"] || "unknown";
+
     const payload = {
       data: [
         {
           event_name: "PageView",
           event_time: eventTime,
           action_source: "website",
-          event_source_url: pagePath,
+          event_source_url: pageUrl,
+          user_data: {
+            client_ip_address: clientIp,
+            client_user_agent: userAgent,
+          },
         },
       ],
     };
@@ -33,7 +43,9 @@ exports.handler = async (event) => {
       `https://graph.facebook.com/v18.0/${PIXEL_ID}/events?access_token=${ACCESS_TOKEN}`,
       {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(payload),
       }
     );
@@ -46,7 +58,7 @@ exports.handler = async (event) => {
       body: JSON.stringify({ success: true }),
     };
   } catch (error) {
-    console.error("PageView error:", error);
+    console.error("PageView CAPI error:", error);
     return {
       statusCode: 500,
       body: "Server error",
